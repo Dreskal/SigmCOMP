@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b4h0wlflb2f5s"]
+
+[ext_resource type="Script" uid="uid://d24v0x20m40kp" path="res://Scripts/player_move.gd" id="1_cvnsp"]
+[ext_resource type="Texture2D" uid="uid://dmsc5b8gc5a3f" path="res://Sprites/порнолорд.png" id="2_6t5aa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vgqql"]
+size = Vector2(167, 240)
+
+[node name="Player" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_cvnsp")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+scale = Vector2(0.26834238, 0.27932096)
+texture = ExtResource("2_6t5aa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("RectangleShape2D_vgqql")
